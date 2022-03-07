@@ -63,3 +63,12 @@ Key           | Value
 _id           | ObjectId
 prouct        | String
 total_price   | String
+
+Key           | Value
+--------------|-----------
+_id           | ObjectId
+beer          | String
+price         | String
+taste         | String
+colour        | String
+description   | String
