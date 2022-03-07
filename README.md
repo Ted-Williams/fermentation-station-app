@@ -57,3 +57,9 @@ Key      | Value
 _id      | ObjectId
 username | String
 password | String
+
+Key           | Value
+--------------|-----------
+_id           | ObjectId
+prouct        | String
+total_price   | String
