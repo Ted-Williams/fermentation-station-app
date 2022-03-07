@@ -26,3 +26,8 @@ Welcome to **Fermentation Station**. A place where people who love the taste of 
 * As a developer, I want to be able to create a usable app. 
 
 * As a developer, I want to be able to increase the passion for Craft Beers and Beer Infused Food Produce.
+
+### Design 
+
+1. **Logo** 
+The logo was created using [Free Logo Maker](https://logomakr.com). It was designed to to show the love for beer and symbolise the process of making beer. 
