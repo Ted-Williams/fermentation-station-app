@@ -31,3 +31,9 @@ Welcome to **Fermentation Station**. A place where people who love the taste of 
 
 1. **Logo** 
 The logo was created using [Free Logo Maker](https://logomakr.com). It was designed to to show the love for beer and symbolise the process of making beer. 
+
+2. **Colour Scheme**
+
+The colours for the website were chosen using [Coolors](https://coolors.co/). They were chosen with the aim to represent the Fermentation Brand and the love that goes into it. The chosen colours are:
+
+![](beer-app/src/assets/images/coolors.png)
