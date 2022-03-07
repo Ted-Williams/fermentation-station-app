@@ -86,3 +86,6 @@ description   | String
 ### Existing Features
 
 The features that were added to the project were designed to have a high level of usability.
+
+### Features Left to Implement
+
