@@ -72,3 +72,10 @@ price         | String
 taste         | String
 colour        | String
 description   | String
+
+Key           | Value
+--------------|-----------
+_id           | ObjectId
+food          | String
+price         | String
+description   | String
