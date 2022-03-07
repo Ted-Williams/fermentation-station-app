@@ -49,3 +49,11 @@ The wireframes for this website where created using [Balsamiq](https://balsamiq.
 ![](beer-app/src/assets/images/wireframes/desktop.png)
 ![](beer-app/src/assets/images/wireframes/tablet.png)
 ![](beer-app/src/assets/images/wireframes/phone.png)
+
+### Database Structure
+
+Key      | Value
+---------|-----------
+_id      | ObjectId
+username | String
+password | String
