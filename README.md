@@ -89,3 +89,13 @@ The features that were added to the project were designed to have a high level o
 
 ### Features Left to Implement
 
+## Technologies Used
+---
+
+### **Languages:**
+
+* HTML
+* CSS
+* JavaScript
+* JSON
+* Python 
