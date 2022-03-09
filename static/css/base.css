@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('/media/homepage_beer.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: cal(100vh - 164px);
+    color: #000;
+    font-family: 'lato';
+}
