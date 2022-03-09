@@ -21,6 +21,8 @@ icon {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 
 .main-logo-link {
@@ -28,8 +30,8 @@ icon {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #fff;
+    color: #000;
     min-width: 260px;
 }
 
@@ -50,6 +52,10 @@ icon {
 
 .text-black {
     color: #000 !important;
+}
+
+.text-white {
+    color: #fff !important;
 }
 
 .border-black {
