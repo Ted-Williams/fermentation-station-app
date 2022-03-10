@@ -3,13 +3,27 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "name": "",
-      "description": "",
-      "price": "",
-      "category": "",
-      "rating": "",
-      "image_url":
-      "image"
+      "name": "Tribute",
+      "description": "A very tatsy beer",
+      "price": "3.50",
+      "category": "1",
+      "rating": "1.2",
+      "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sainsburys.co.uk%2Fgol-ui%2Fproduct%2Fst-austell-tribute-ale-500ml&psig=AOvVaw3Pc9SrJVgxmuaio308Gkle&ust=1646982946403000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKC4z9H_uvYCFQAAAAAdAAAAABAD",
+      "image": "tribute.jpg"
+    }
+  },
+
+  {
+  "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "name": "Pork Scratchings",
+      "description": "A very tatsy snack",
+      "price": "3.50",
+      "category": "2",
+      "rating": "1.2",
+      "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sainsburys.co.uk%2Fgol-ui%2Fproduct%2Fst-austell-tribute-ale-500ml&psig=AOvVaw3Pc9SrJVgxmuaio308Gkle&ust=1646982946403000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKC4z9H_uvYCFQAAAAAdAAAAABAD",
+      "image": "porkscratchings.jpg"
     }
   }
 ]
