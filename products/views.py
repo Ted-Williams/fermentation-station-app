@@ -6,7 +6,7 @@ def all_products(request):
 
     products = Product.objects.all()
 
-    contect =  {
+    context = {
         'products': products,
     }
 
