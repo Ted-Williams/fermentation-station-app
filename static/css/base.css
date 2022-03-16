@@ -62,18 +62,24 @@ icon {
     border: 1px solid black !important;
 }
 
-.overlay { 
+/* .overlay { 
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
     z-index: 1;
-}
+} */
 
 .body-text {
     color: #000 !important;
 }
+
+a.category-name > span.badge:hover {
+    background: #b8bbbe !important;
+    color: #fff !important;
+}
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
