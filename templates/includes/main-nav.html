@@ -7,6 +7,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="beer-link">
                 <a href="" class="dropdown-item">Beer</a>
                 <a href="" class="dropdown-item">Food & Snacks</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -14,7 +15,6 @@
                 Filter
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Category</a>
                 <a href="" class="dropdown-item ">By Rating</a>
