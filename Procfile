@@ -1,0 +1,1 @@
+web: gunicorn fermentation_station.wsgi.application
