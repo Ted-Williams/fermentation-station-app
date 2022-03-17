@@ -93,6 +93,18 @@ a.category-name > span.badge:hover {
     cursor: pointer;
 }
 
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; 
+    border: 1px solid black;
+
+    
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
