@@ -1,1 +1,1 @@
-web: gunicorn fermentation_station.wsgi.application
+web: gunicorn fermentation_station.wsgi:application
