@@ -92,7 +92,7 @@ a.category-name > span.badge:hover {
 .btt-link, 
 .update-link, 
 .remove-item {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 
