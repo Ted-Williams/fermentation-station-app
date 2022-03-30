@@ -21,7 +21,6 @@ def add_to_basket(request, item_id):
 
     request.session['basket'] = basket
     return redirect(redirect_url)
-    
 
 def adjust_basket(request, item_id):
     """ Change a quantity of the specified product to the shopping basket """
@@ -32,7 +31,7 @@ def adjust_basket(request, item_id):
     if quantity > 0:
         basket[item_id] = quantity
     else:
-        basket.pop[item_id]
+        basket.pop(item_id)
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
