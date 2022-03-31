@@ -6,9 +6,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from basket.contexts import basket_contents
-
 import stripe
-
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
