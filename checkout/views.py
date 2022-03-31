@@ -14,7 +14,7 @@ def checkout(request):
 
     basket = request.session.get('basket', {})
     if not basket:
-        messages.error(request, 'You basket is empty!')
+        messages.error(request, "There's nothing in your basket at the moment")
         return redirect(reverse('products'))
 
     current_basket = basket_contents(request)
@@ -26,11 +26,12 @@ def checkout(request):
         currency=settings.STRIPE_CURRENCY,
     )
 
+    order_form = OrderForm()
+
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
 
-    order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
