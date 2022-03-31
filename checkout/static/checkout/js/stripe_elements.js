@@ -17,10 +17,11 @@ var style = {
         iconColor: '#dc3545'
     }
 };
+
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
-ard.addEventListener('change', function (event) {
+card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
     if (event.error) {
         var html = `
