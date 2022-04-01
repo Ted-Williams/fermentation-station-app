@@ -180,6 +180,7 @@ os.environ["HOSTNAME"] = "0.0.0.0"
 os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
 os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
 os.environ["DATABASE_URL"] = "[Your DB URL]"
+```
 
 ### Database setup
 
