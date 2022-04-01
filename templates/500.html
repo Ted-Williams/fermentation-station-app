@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 centered">
+            <h1 class="centering">500!</h1>
+            <a href="{% url 'products' %}" aria-label="view {{ product.name }}">There is an issue with the products. Please return later on. Maybe grab a beer and wait!</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
