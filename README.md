@@ -119,6 +119,14 @@ The features that were added to the project were designed to have a high level o
 ## Testing
 ---
 
+* Implementation - The app was tested throughout the development to esure there were no errors.
+
+* Test - I ran the app from the cmd line and checked each new feature as it was added.
+
+* Result - The app works as it is intended 
+
+* Verdict - The tests passed once the bugs were fixed
+
 ### All Sections
 
 ## Deployment 
