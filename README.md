@@ -46,9 +46,9 @@ The website has the main font of Roboto Slab, which was chosen due to it **reada
 
 The wireframes for this website where created using [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAjwltH3BRB6EiwAhj0IUBrAHe-2BiRjQmQGSO-FZIjoEjkckL_kVyJXd5ShGVwKqDaDMqKjvBoCQksQAvD_BwE)
 
-![](beer-app/src/assets/images/wireframes/desktop.png)
-![](beer-app/src/assets/images/wireframes/tablet.png)
-![](beer-app/src/assets/images/wireframes/phone.png)
+![](/src/static/wireframes/desktop.png)
+![](/static/wireframes/tablet.png)
+![](/src/static/wireframes/mobile.png)
 
 ### Database Structure
 
