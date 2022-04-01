@@ -123,6 +123,132 @@ The features that were added to the project were designed to have a high level o
 
 ## Deployment 
 ---
+Below is an example of how to deploy this site locally based on using VsCode IDE, deploying to Heroku using Amazon S3 for hosting of static and media files. This will allow the site to deploy automatically with commits to the master branch. The code can also be run locally.
+
+### Deployment Requirements
+
+* Gitpod IDE
+* Python Documenttation
+* PIP packge installer
+* Stripe payment infastructure
+
+### Deloying Locally 
+
+1. Clone a copy of the repository by clicking code at the top of the page and selecting 'Download Zip' when this has downloaded, extract the files to your folder of choice. Alternatively if you have git installed on your client you can run the following command from the terminal.
+
+
+   ```bash
+   git clone https://github.com/D0nni387/fermentation-station-app.git
+   ```
+
+2. Open us your local IDE (For this example we will be using VScode as linked in the requirements) and open the working folder.
+
+3. Ideally you will want to work within a virtual environment to allow all packages to be kept within the project, this can be installed using the following command (please note some IDE's require pip3 instead of pip, please check with the documentation for your chosen IDE)
+
+```bash
+pip install pipenv
+```
+
+4. In your root dir, create a new folder called .venv (ensure you have the .)
+
+5. To activate the virtual environment navigate to the below dir and run activate.bat
+
+```bash
+[folderinstalled]\scripts\activate\activate.bat
+```
+
+If you're using Linux or Mac use the below command 
+
+```bash
+source .venv/bin/activate
+```
+
+6. Next we need to install all modules required by the project to run, use the follow
+
+```bash
+pipenv install -r requirements.txt
+```
+
+7. Create a new folder within the root dir called env.py. Within this file add the following lines to set up the environmental variables.
+
+```bash
+import os
+
+os.environ["SECRET_KEY"] = "[Your Secret Key]"
+os.environ["DEV"] = "1"
+os.environ["HOSTNAME"] = "0.0.0.0"
+os.environ["STRIPE_PUBLIC_KEY"] = "[Your Stripe Key]"
+os.environ["STRIPE_SECRET_KEY"] = "[Your Stripe Secret Key]"
+os.environ["DATABASE_URL"] = "[Your DB URL]"
+
+### Database setup
+
+1. To set up your database you will first need to run the following command
+
+```bash
+python manage.py migrate
+```
+
+2. To create a super user to allow you to access the admin panel run the following command in your terminal and complete the required information as prompted
+
+```bash
+python manage.py createsuperuser
+```
+
+3. From there you should now be able to run the server using the following command
+
+```bash
+python manage.py runserver
+```
+
+4. If everything has been correctly configure you should not get a message giving you a link to your locally hosted site usually at http://127.0.0.1:8000
+
+5. Next close the server in your terminal using ctrl+c (cmd+c on mac) and run the following commands to populate the database
+
+```bash
+python manage.py loaddata store/fixtures/categories.json
+python manage.py loaddata store/fixtures/products.json
+python manage.py loaddata clients/fixtures/clients.json
+```
+
+### Deploying to Heroku
+
+To run this application in an online environment you will need to deploy the code to *Heroku*.
+Before moving on to this section please ensure you have followed the instructions for local deployment and this has been successful
+
+1. Either create an account at [Heroku](https://www.heroku.com/) or log in to your account
+2. Set up a new app under a unique name
+3. In the resources section, in the addons field type the below command and select the free cost option
+
+```bash
+heroku Postgres
+```
+
+1. in the settings tab select Reveal Config Vars and copy the pre populated DATABASE_URL into your settings.py file in your project
+2. in the Config Vars in Heroku you will need to populate with the following keys
+
+|          Key          |     Value    |
+|:---------------------:|:------------:|
+| AWS_ACCESS_KEY_ID     | [your value] |
+| AWS_SECRET_ACCESS_KEY | [your value] |
+| SECRET_KEY            | [your value] |
+| STRIPE_PUBLIC_KEY     | [your value] |
+| STRIPE_SECRET_KEY     | [your value] |
+| USE_AWS               | TRUE         |
+| DATABASE_URL          | [Your Value] |
+
+2. Now this has been configured you will now migrate the local database to the cloud database using the migrate command as below
+
+```bash
+python manage.py migrate
+```
+
+1. Next you will need to create a super user and populate the database as described in the database set up section
+2. When the migrations and data has been loaded, in your *Heroku* dashboard select the Deploy tab
+3. From here select the Github option and connect the repository from GitHub and select the branch (Master) to deploy from.
+4. It is advised to select automatic deployment to ensure for each push to Github the hosted version is up to date.
+5. When this has deployed select open app from the top bar of the *Heroku* App.
+
 
 ## Credits
 
