@@ -1,4 +1,4 @@
-![](beer-app/src/assets/images/logo.png)
+![](static/logo/logo.png)
 
 # Fermentation Station
 
